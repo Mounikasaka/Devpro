@@ -15,4 +15,5 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo apt-get update -y 
 sudo apt-get install jenkins -y
 sudo service jenkins start
+sudo chmod 777 /var/lib/jenkins
 cat /var/lib/jenkins/secrets/initialAdminpassword

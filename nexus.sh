@@ -1,4 +1,4 @@
-apt-get update -y
+sudo apt-get update -y
 
 echo "Install Java"
 apt-get install openjdk-8-jdk -y

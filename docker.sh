@@ -18,3 +18,5 @@ docker info
 sudo chmod 777 /var/run/docker.sock
 
 sudo systemctl status docker
+
+docker run -d --name sonarqube -p 9000:9000 sonarqube  #9000(userdefined):9000(sonar default port address)

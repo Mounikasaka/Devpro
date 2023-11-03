@@ -1,4 +1,5 @@
-sudo apt-get update -y
+sudo su
+apt-get update -y
 
 echo "Install Java"
 apt-get install openjdk-8-jdk -y
@@ -12,8 +13,9 @@ wget https://sonatype-download.global.ssl.fastly.net/repository/downloads-prod-g
 tar xzf nexus-3.29.2-02-unix.tar.gz -C /opt/nexus --strip-components=1
 chown -R nexus:nexus /opt/nexus
 
-nano /opt/nexus/bin/nexus.vmoptions
-
+vi /opt/nexus/bin/nexus.vmoptions
+vi /opt/nexus/bin/nexus.rc
+#remove hastag before run as user="nexus"
 
 
 ```
